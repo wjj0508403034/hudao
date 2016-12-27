@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:GroupList="clr-namespace:Controllers.Controls.GroupList">
+    <GroupStyle x:Key="DefaultGroupListHeaderStyle">
+        <GroupStyle.HeaderTemplate>
+            <DataTemplate>
+                <Border Height="30" Background="#ccc">
+                    <TextBlock Text="{Binding Name}" VerticalAlignment="Center"></TextBlock>
+                </Border>
+            </DataTemplate>
+        </GroupStyle.HeaderTemplate>
+    </GroupStyle>
+
+    <Style TargetType="{x:Type GroupList:GroupListBox}">
+        <Setter Property="GroupList:GroupStyleExtension.Append" Value="{StaticResource ResourceKey=DefaultGroupListHeaderStyle}"></Setter>
+        <Setter Property="BorderThickness" Value="0"></Setter>
+<!--        <Setter Property="Template">-->
+<!--            <Setter.Value>-->
+<!--                -->
+<!--            </Setter.Value>-->
+<!--        </Setter>-->
+    </Style>
+</ResourceDictionary>

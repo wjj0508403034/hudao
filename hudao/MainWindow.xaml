@@ -1,16 +1,17 @@
-﻿<Window x:Class="hudao.MainWindow"
+﻿<Window x:Class="hudao.MainWindow" xmlns:fa="http://schemas.fontawesome.io/icons/"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="MainWindowContainer"
         Title="MainWindow" Height="350" Width="525">
     <AdornerDecorator>
         <Grid>
             <ContentControl x:Name="ViewContainer">
-                <Button Click="Button_Click_1">test</Button>
+                <Button Click="Button_Click_1">
+                    <Button.Content>
+                        <fa:ImageAwesome Icon="LongArrowLeft"/>
+                    </Button.Content>
+                </Button>
             </ContentControl>
             <StackPanel Orientation="Vertical" x:Name="MessageContainer">
-                <Border>
-                    <ContentControl>xxx</ContentControl>
-                </Border>
             </StackPanel>
         </Grid>
     </AdornerDecorator>

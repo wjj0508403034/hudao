@@ -1,8 +1,8 @@
-﻿<Application x:Class="hudao.App"
+﻿<Application x:Class="hudao.App" 
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml" DispatcherUnhandledException="AppDispatcherUnhandledException">
     <Application.Resources>
-         
+        <ResourceDictionary Source="/hudao;component/Themes/Generic.xaml"/>
     </Application.Resources>
 </Application>
