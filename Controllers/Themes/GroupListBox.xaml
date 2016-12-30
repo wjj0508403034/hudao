@@ -9,15 +9,37 @@
                 </Border>
             </DataTemplate>
         </GroupStyle.HeaderTemplate>
+        <GroupStyle.ContainerStyle>
+            <Style TargetType="{x:Type GroupItem}">
+                <Setter Property="Margin" Value="-5,0,0,0"/>
+            </Style>
+        </GroupStyle.ContainerStyle>
     </GroupStyle>
 
     <Style TargetType="{x:Type GroupList:GroupListBox}">
         <Setter Property="GroupList:GroupStyleExtension.Append" Value="{StaticResource ResourceKey=DefaultGroupListHeaderStyle}"></Setter>
         <Setter Property="BorderThickness" Value="0"></Setter>
-<!--        <Setter Property="Template">-->
-<!--            <Setter.Value>-->
-<!--                -->
-<!--            </Setter.Value>-->
-<!--        </Setter>-->
+    </Style>
+
+    <ControlTemplate x:Key="DefaultListBoxItemTemplate" TargetType="{x:Type ListBoxItem}">
+        <Border Name="border" BorderBrush="Transparent" BorderThickness="0" CornerRadius="1" MinHeight="30" Margin="0">
+            <ContentPresenter Name="content" VerticalAlignment="Center"/>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter TargetName="content" Property="TextElement.Foreground" Value="White" />
+                <Setter Property="Background" TargetName="border" Value="#5373A2"/>
+                <Setter Property="BorderBrush" TargetName="border" Value="#FFFEFF"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter TargetName="content" Property="TextElement.Foreground" Value="White" />
+                <Setter Property="Background" TargetName="border" Value="#5373A2"/>
+                <Setter Property="BorderBrush" TargetName="border" Value="#FFFEFF"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <Style TargetType="{x:Type ListBoxItem}">
+        <Setter Property="Template" Value="{StaticResource DefaultListBoxItemTemplate}"/>
     </Style>
 </ResourceDictionary>

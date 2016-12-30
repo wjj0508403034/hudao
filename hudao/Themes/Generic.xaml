@@ -3,5 +3,7 @@
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/Controllers;component/Themes/Generic.xaml"/>
+        <ResourceDictionary Source="/hudao;component/Views/Common/Generic.xaml"/>
+        <ResourceDictionary Source="/hudao;component/Views/Inventory/Generic.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

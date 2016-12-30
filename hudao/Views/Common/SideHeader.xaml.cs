@@ -11,25 +11,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using hudao.Core;
 
-namespace hudao.Views.Inventory
+namespace hudao.Views.Common
 {
     /// <summary>
-    /// Interaction logic for ListPanel.xaml
+    /// Interaction logic for SideHeader.xaml
     /// </summary>
-    public partial class ListPanel
+    public partial class SideHeader : UserControl
     {
-        public ListPanel()
+        public SideHeader()
         {
             InitializeComponent();
-            var xx = new TestXX();
-
-            xx.Items.Add(new Test() { CreateTime = DateTime.Now, TestNo = "11111" });
-            xx.Items.Add(new Test() { CreateTime = DateTime.Now, TestNo = "11112" });
-            this.TestListBox.ItemsSource = xx.Items;
         }
-
-
     }
 }

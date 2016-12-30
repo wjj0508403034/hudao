@@ -11,7 +11,7 @@
             <ColumnDefinition Width="200" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Inventory:ListPanel></Inventory:ListPanel>
+        <Inventory:SidePanel></Inventory:SidePanel>
         <Inventory:DetailPanel Grid.Column="1"></Inventory:DetailPanel>
     </Grid>
 </Core:BaseView>

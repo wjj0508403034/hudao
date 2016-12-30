@@ -16,18 +16,20 @@ using hudao.Core;
 namespace hudao.Views.Inventory
 {
     /// <summary>
-    /// Interaction logic for DetailPanel.xaml
+    /// Interaction logic for SidePanel.xaml
     /// </summary>
-    public partial class DetailPanel : UserControl
+    public partial class SidePanel
     {
-        public DetailPanel()
+        public SidePanel()
         {
             InitializeComponent();
+            var xx = new TestXX();
+
+            xx.Items.Add(new Test() { CreateTime = DateTime.Now, TestNo = "11111" });
+            xx.Items.Add(new Test() { CreateTime = DateTime.Now, TestNo = "11112" });
+            this.TestListBox.ItemsSource = xx.Items;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Navigator.Current.GotoView(new SidePanel());
-        }
+
     }
 }

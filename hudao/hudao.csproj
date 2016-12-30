@@ -83,6 +83,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Views\Common\SideHeader.xaml.cs">
+      <DependentUpon>SideHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inventory\Converters\StatusColorConverter.cs" />
     <Compile Include="Core\BaseMessage.cs" />
     <Compile Include="Core\BaseView.cs" />
     <Compile Include="Core\IDialog.cs" />
@@ -97,15 +101,17 @@
     <Compile Include="Views\Common\Message.xaml.cs">
       <DependentUpon>Message.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Inventory\Converters\StatusTextConverter.cs" />
     <Compile Include="Views\Inventory\DetailPanel.xaml.cs">
       <DependentUpon>DetailPanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Inventory\Index.xaml.cs">
       <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Inventory\ListPanel.xaml.cs">
-      <DependentUpon>ListPanel.xaml</DependentUpon>
+    <Compile Include="Views\Inventory\SidePanel.xaml.cs">
+      <DependentUpon>SidePanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Inventory\Status.cs" />
     <Compile Include="Views\Inventory\Test.cs" />
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
@@ -126,7 +132,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Common\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Common\Message.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Common\SideHeader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -138,7 +152,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Inventory\ListPanel.xaml">
+    <Page Include="Views\Inventory\SidePanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Inventory\Generic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

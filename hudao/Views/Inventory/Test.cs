@@ -32,6 +32,17 @@ namespace hudao.Views.Inventory
             }
         }
 
+        private Status status;
+        public Status Status
+        {
+            get { return this.status; }
+            set
+            {
+                this.status = value;
+                OnPropertyChanged("Status");
+            }
+        }
+
     }
 
     public class TestXX : BasicViewModel

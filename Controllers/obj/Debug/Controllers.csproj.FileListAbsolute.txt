@@ -9,11 +9,11 @@ C:\SourceCodes\hudao1\Controllers\bin\Debug\Controllers.dll
 C:\SourceCodes\hudao1\Controllers\bin\Debug\Controllers.pdb
 C:\SourceCodes\hudao1\Controllers\bin\Debug\FontAwesome.WPF.dll
 C:\SourceCodes\hudao1\Controllers\bin\Debug\FontAwesome.WPF.xml
-C:\SourceCodes\hudao1\Controllers\obj\Debug\Themes\GroupListBox.baml
 C:\SourceCodes\hudao1\Controllers\obj\Debug\Themes\Generic.baml
+C:\SourceCodes\hudao1\Controllers\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\SourceCodes\hudao1\Controllers\obj\Debug\Controllers_MarkupCompile.cache
+C:\SourceCodes\hudao1\Controllers\obj\Debug\Controllers_MarkupCompile.lref
+C:\SourceCodes\hudao1\Controllers\obj\Debug\Themes\GroupListBox.baml
 C:\SourceCodes\hudao1\Controllers\obj\Debug\Controllers.g.resources
 C:\SourceCodes\hudao1\Controllers\obj\Debug\Controllers.dll
 C:\SourceCodes\hudao1\Controllers\obj\Debug\Controllers.pdb
-C:\SourceCodes\hudao1\Controllers\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\SourceCodes\hudao1\Controllers\obj\Debug\Controllers_MarkupCompile.lref

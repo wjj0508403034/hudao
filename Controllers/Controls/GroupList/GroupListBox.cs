@@ -9,6 +9,11 @@ namespace Controllers.Controls.GroupList
     [StyleTypedProperty(Property = "ItemContainerStyle", StyleTargetType = typeof(ListBoxItem))]
     public class GroupListBox : ListBox
     {
+
+        static GroupListBox()
+        {
+           // DefaultStyleKeyProperty.OverrideMetadata(typeof(GroupListBox), new FrameworkPropertyMetadata(typeof(GroupListBox)));
+        }
         public static readonly DependencyProperty GroupMemberPathProperty =
           DependencyProperty.Register(
                   "GroupMemberPath",
