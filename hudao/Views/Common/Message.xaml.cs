@@ -12,7 +12,6 @@ namespace hudao.Views.Common
             InitializeComponent();
             this.Text = text;
             this.Level = level;
-            this.MessageContainer.Text = text;
         }
     }
 }

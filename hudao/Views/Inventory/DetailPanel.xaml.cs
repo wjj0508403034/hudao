@@ -18,16 +18,16 @@ namespace hudao.Views.Inventory
     /// <summary>
     /// Interaction logic for DetailPanel.xaml
     /// </summary>
-    public partial class DetailPanel : UserControl
+    public partial class DetailPanel
     {
         public DetailPanel()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void OnDetailButtonClick(object sender, RoutedEventArgs e)
         {
-            Navigator.Current.GotoView(new SidePanel());
+            Navigator.Current.GotoView(new DetailView());
         }
     }
 }

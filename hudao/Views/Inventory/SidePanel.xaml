@@ -8,7 +8,7 @@
                                       xmlns:Common="clr-namespace:hudao.Views.Common" mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <StackPanel Orientation="Vertical">
-        <Common:SideHeader></Common:SideHeader>
+        <Common:SideHeader PlusButtonClicked="OnPlusButtonClicked" MenuButtonClicked="OnMenuButtonClicked"></Common:SideHeader>
         <GroupList:GroupListBox x:Name="TestListBox"   GroupMemberPath="CreateTime" ItemTemplate="{DynamicResource InventorySideBarItem}"  >
         </GroupList:GroupListBox>
     </StackPanel>

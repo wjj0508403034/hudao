@@ -28,12 +28,12 @@
         <ControlTemplate.Triggers>
             <Trigger Property="IsSelected" Value="True">
                 <Setter TargetName="content" Property="TextElement.Foreground" Value="White" />
-                <Setter Property="Background" TargetName="border" Value="#5373A2"/>
+                <Setter Property="Background" TargetName="border" Value="{DynamicResource ThemeBrush}"/>
                 <Setter Property="BorderBrush" TargetName="border" Value="#FFFEFF"/>
             </Trigger>
             <Trigger Property="IsMouseOver" Value="true">
                 <Setter TargetName="content" Property="TextElement.Foreground" Value="White" />
-                <Setter Property="Background" TargetName="border" Value="#5373A2"/>
+                <Setter Property="Background" TargetName="border" Value="{DynamicResource ThemeBrush}"/>
                 <Setter Property="BorderBrush" TargetName="border" Value="#FFFEFF"/>
             </Trigger>
         </ControlTemplate.Triggers>

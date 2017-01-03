@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Timers;
 using System.Windows.Controls;
 using System.Windows.Threading;
+using hudao.Core.EventHandlers;
 
 namespace hudao.Core
 {

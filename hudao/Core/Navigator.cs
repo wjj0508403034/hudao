@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using hudao.Core.EventHandlers;
 using hudao.Views.Common;
+using hudao.Views.Common.Dialogs;
 using log4net;
 
 namespace hudao.Core
@@ -74,9 +76,46 @@ namespace hudao.Core
             this.ViewContainer.Content = view;
         }
 
+        public void ShowMenu()
+        {
+
+        }
+
+        public void HideMenu()
+        {
+
+        }
+
         public void ShowDialog(IDialog dialog)
         {
 
+        }
+
+        public void ShowInfo(string message)
+        {
+            var dialog = new InfoDialog(InfoLevel.INFO, message);
+            dialog.OpenDialog();
+        }
+
+        public void ShowWarn(string message, DialogButtonClickEventHandler clickHandler = null)
+        {
+            var dialog = new InfoDialog(InfoLevel.WARN, message);
+            if (clickHandler != null)
+            {
+                dialog.OKButtonClicked += clickHandler;
+            }
+            dialog.OpenDialog();
+        }
+
+        public void ShowError(string message)
+        {
+            var dialog = new InfoDialog(InfoLevel.ERROR, message);
+            dialog.OpenDialog();
+        }
+
+        public void SetTitle(String title)
+        {
+            Application.Current.MainWindow.Title = title;
         }
 
         public void ShowMessage(MessageLevel level, string text)

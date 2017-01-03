@@ -16,12 +16,12 @@ namespace hudao.Core
             return this.GetType().Name;
         }
 
-        public void OnActive()
+        public virtual void OnActive()
         {
             Logger.Info(this.GetViewName() + " is active.");
         }
 
-        public void OnDeactive()
+        public virtual void OnDeactive()
         {
             Logger.Info(this.GetViewName() + " is deactive.");
         }

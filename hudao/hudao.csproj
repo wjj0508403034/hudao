@@ -83,8 +83,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Core\EventHandlers\ButtonClickEventHandler.cs" />
+    <Compile Include="Core\EventHandlers\DialogButtonClickEventHandler.cs" />
+    <Compile Include="Views\Common\Dialogs\ConfirmDialog.xaml.cs">
+      <DependentUpon>ConfirmDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\Dialogs\Dialog.cs" />
+    <Compile Include="Views\Common\Dialogs\InfoDialog.xaml.cs">
+      <DependentUpon>InfoDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\Dialogs\InfoLevelcs.cs" />
+    <Compile Include="Views\Common\PropertyField.xaml.cs">
+      <DependentUpon>PropertyField.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Common\SideHeader.xaml.cs">
       <DependentUpon>SideHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\TitlePanel.xaml.cs">
+      <DependentUpon>TitlePanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Inventory\Converters\StatusColorConverter.cs" />
     <Compile Include="Core\BaseMessage.cs" />
@@ -92,7 +108,7 @@
     <Compile Include="Core\IDialog.cs" />
     <Compile Include="Core\IMessage.cs" />
     <Compile Include="Core\IView.cs" />
-    <Compile Include="Core\MessageCloseEventHandler.cs" />
+    <Compile Include="Core\EventHandlers\MessageCloseEventHandler.cs" />
     <Compile Include="Core\MessageLevel.cs" />
     <Compile Include="Core\Navigator.cs" />
     <Compile Include="Core\Controls\BasicGroupListPanelControl.cs" />
@@ -102,8 +118,14 @@
       <DependentUpon>Message.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Inventory\Converters\StatusTextConverter.cs" />
+    <Compile Include="Views\Inventory\Create.xaml.cs">
+      <DependentUpon>Create.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Inventory\DetailPanel.xaml.cs">
       <DependentUpon>DetailPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inventory\DetailView.xaml.cs">
+      <DependentUpon>DetailView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Inventory\Index.xaml.cs">
       <DependentUpon>Index.xaml</DependentUpon>
@@ -132,6 +154,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Common\Dialogs\ConfirmDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Common\Dialogs\InfoDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Common\Generic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -140,11 +170,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Common\PropertyField.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Common\SideHeader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Common\TitlePanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Inventory\Create.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Inventory\DetailPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Inventory\DetailView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

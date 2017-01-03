@@ -17,3 +17,6 @@ C:\SourceCodes\hudao1\Controllers\obj\Debug\Themes\GroupListBox.baml
 C:\SourceCodes\hudao1\Controllers\obj\Debug\Controllers.g.resources
 C:\SourceCodes\hudao1\Controllers\obj\Debug\Controllers.dll
 C:\SourceCodes\hudao1\Controllers\obj\Debug\Controllers.pdb
+C:\SourceCodes\hudao1\Controllers\obj\Debug\Themes\LinkButton.baml
+C:\SourceCodes\hudao1\Controllers\obj\Debug\Themes\FixedWindow.baml
+C:\SourceCodes\hudao1\Controllers\obj\Debug\Themes\Common.baml

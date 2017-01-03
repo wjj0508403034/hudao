@@ -2,10 +2,33 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Common="clr-namespace:hudao.Views.Common"
+             xmlns:Buttons="clr-namespace:Controllers.Controls.Buttons;assembly=Controllers" mc:Ignorable="d" BorderBrush="{DynamicResource LineBrush}" BorderThickness="1,0,0,0"
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <Button Click="Button_Click">test</Button>
-    </Grid>
+    <StackPanel Orientation="Vertical">
+        <Common:TitlePanel Title="xxxx" HideBack="True"></Common:TitlePanel>
+        <StackPanel x:Name="DocumentHeaderPanel" Orientation="Vertical">
+            <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
+            <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
+            <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
+            <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
+        </StackPanel>
+        <StackPanel x:Name="DocumentLinePanel">
+            <Grid Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <TextBlock VerticalAlignment="Center">调拨商品</TextBlock>
+                <TextBlock Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <Buttons:LinkButton Click="OnDetailButtonClick">查看详情</Buttons:LinkButton>
+                </TextBlock>
+            </Grid>
+            <DataGrid>
+                
+            </DataGrid>
+        </StackPanel>
+    </StackPanel>
 </UserControl>
