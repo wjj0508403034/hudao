@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using hudao.Core;
 using hudao.Views.Inventory;
+using hudao.Views.Inventory.Index;
 
 namespace hudao
 {
@@ -34,9 +35,9 @@ namespace hudao
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Navigator.Current.ShowMessage(MessageLevel.INFO, "Hello World");
-            Navigator.Current.GotoView(new Index());
+            Navigator.Current.GotoView(new IndexView());
            
-            //this.ViewContainer.Content = new Index();
+            //this.ViewContainer.Content = new IndexView();
         }
     }
 }

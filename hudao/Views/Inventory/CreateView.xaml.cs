@@ -3,11 +3,11 @@
 namespace hudao.Views.Inventory
 {
     /// <summary>
-    /// Interaction logic for Create.xaml
+    /// Interaction logic for CreateView.xaml
     /// </summary>
-    public partial class Create 
+    public partial class CreateView 
     {
-        public Create()
+        public CreateView()
         {
             InitializeComponent();
         }

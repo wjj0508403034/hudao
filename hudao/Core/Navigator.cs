@@ -91,9 +91,13 @@ namespace hudao.Core
 
         }
 
-        public void ShowInfo(string message)
+        public void ShowInfo(string message, DialogButtonClickEventHandler clickHandler = null)
         {
             var dialog = new InfoDialog(InfoLevel.INFO, message);
+            if (clickHandler != null)
+            {
+                dialog.OKButtonClicked += clickHandler;
+            }
             dialog.OpenDialog();
         }
 
@@ -107,9 +111,13 @@ namespace hudao.Core
             dialog.OpenDialog();
         }
 
-        public void ShowError(string message)
+        public void ShowError(string message, DialogButtonClickEventHandler clickHandler = null)
         {
             var dialog = new InfoDialog(InfoLevel.ERROR, message);
+            if (clickHandler != null)
+            {
+                dialog.OKButtonClicked += clickHandler;
+            }
             dialog.OpenDialog();
         }
 

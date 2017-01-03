@@ -1,27 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using hudao.Core;
 using hudao.Views.Common.Dialogs;
 
-namespace hudao.Views.Inventory
+namespace hudao.Views.Inventory.Index
 {
     /// <summary>
-    /// Interaction logic for SidePanel.xaml
+    /// Interaction logic for LeftPanel.xaml
     /// </summary>
-    public partial class SidePanel
+    public partial class LeftPanel
     {
-        public SidePanel()
+        public LeftPanel()
         {
             InitializeComponent();
             var xx = new TestXX();
@@ -44,7 +34,7 @@ namespace hudao.Views.Inventory
         private void confirmDialog_OKButtonClicked(Dialog dialog, Button button, RoutedEventArgs e)
         {
             dialog.Close();
-            Navigator.Current.GotoView(new Create());
+            Navigator.Current.GotoView(new CreateView());
         }
 
         private void confirmDialog_CancelButtonClicked(Dialog dialog, Button button, RoutedEventArgs e)
