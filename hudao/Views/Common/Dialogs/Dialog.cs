@@ -10,6 +10,11 @@ namespace hudao.Views.Common.Dialogs
             return this.ShowDialog();
         }
 
+        public virtual void CloseDialog()
+        {
+            this.Close();
+        }
+
         protected virtual void ApplyButtonTexts()
         {
             

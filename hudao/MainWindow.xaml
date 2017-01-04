@@ -1,15 +1,10 @@
-﻿<Window x:Class="hudao.MainWindow" xmlns:fa="http://schemas.fontawesome.io/icons/"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Window x:Class="hudao.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowStartupLocation="CenterScreen"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="MainWindowContainer" BorderBrush="{DynamicResource LineBrush}" BorderThickness="1"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="768" Width="1024">
     <AdornerDecorator>
         <Grid>
             <ContentControl x:Name="ViewContainer">
-                <Button Click="Button_Click_1">
-                    <Button.Content>
-                        <fa:ImageAwesome Icon="LongArrowLeft"/>
-                    </Button.Content>
-                </Button>
             </ContentControl>
             <StackPanel Orientation="Vertical" x:Name="MessageContainer">
             </StackPanel>

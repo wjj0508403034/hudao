@@ -7,16 +7,24 @@
              xmlns:Buttons="clr-namespace:Controllers.Controls.Buttons;assembly=Controllers"
              xmlns:Tables="clr-namespace:Controllers.Controls.Tables;assembly=Controllers" mc:Ignorable="d" BorderBrush="{DynamicResource LineBrush}" BorderThickness="1,0,0,0"
              d:DesignHeight="300" d:DesignWidth="300">
-    <StackPanel Orientation="Vertical">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="202*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
         <Common:TitlePanel Title="xxxx" HideBack="True"></Common:TitlePanel>
-        <StackPanel x:Name="DocumentHeaderPanel" Orientation="Vertical">
-            <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
-            <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
-            <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
-            <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
-        </StackPanel>
-        <StackPanel x:Name="DocumentLinePanel">
-            <Grid Height="50">
+        <StackPanel Orientation="Vertical" Grid.Row="1">
+            <Border Background="White" BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,0,1">
+                <StackPanel x:Name="DocumentHeaderPanel" Orientation="Vertical" Margin="20,0" >
+                    <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
+                    <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
+                    <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
+                    <Common:PropertyField KeyContent="调拨日期" ValueContent="12/12/2016" ></Common:PropertyField>
+                </StackPanel>
+            </Border>
+
+            <Grid Height="50" Margin="20,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="100" />
                     <ColumnDefinition Width="*" />
@@ -27,12 +35,19 @@
                     <Buttons:LinkButton Click="OnDetailButtonClick">查看详情</Buttons:LinkButton>
                 </TextBlock>
             </Grid>
-            <Tables:Table x:Name="TestDataGrid">
-                <Tables:Table.Columns >
-                    <DataGridTextColumn x:Name="Id" Header="Test"  Binding="{Binding Path=TestNo}"  Width="1*">
-                    </DataGridTextColumn>
-                </Tables:Table.Columns>
-            </Tables:Table>
+            <Border Background="White" BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,0,1">
+                <StackPanel x:Name="DocumentLinePanel">
+                    <Tables:Table x:Name="TestDataGrid" Padding="20,0">
+                        <Tables:Table.Columns >
+                            <DataGridTextColumn x:Name="Id" Header="Test"  Binding="{Binding Path=TestNo}"  Width="1*">
+                            </DataGridTextColumn>
+                        </Tables:Table.Columns>
+                    </Tables:Table>
+                </StackPanel>
+            </Border>
         </StackPanel>
-    </StackPanel>
+        <StackPanel Grid.Row="2" Height="50" Orientation="Horizontal" Background="White" FlowDirection="RightToLeft">
+            <Button Style="{DynamicResource PrimaryButtonStyle}" Width="120" HorizontalAlignment="Right" Click="OnConfirmDeliveryButtonClick">确认到货</Button>
+        </StackPanel>
+    </Grid>
 </UserControl>

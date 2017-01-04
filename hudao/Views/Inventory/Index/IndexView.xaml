@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:Inventory="clr-namespace:hudao.Views.Inventory" xmlns:Core="clr-namespace:hudao.Core"
-               xmlns:Index="clr-namespace:hudao.Views.Inventory.Index" mc:Ignorable="d" 
+             xmlns:Core="clr-namespace:hudao.Core"
+             xmlns:Index="clr-namespace:hudao.Views.Inventory.Index" mc:Ignorable="d" Background="{DynamicResource BackgroundBrush}"
              d:DesignHeight="400" d:DesignWidth="600">
     <Grid>
         <Grid.ColumnDefinitions>

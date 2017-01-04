@@ -16,5 +16,5 @@ DEBUG;TRACE
 13-1464881546
 Themes\Common.xaml;Themes\Table.xaml;Themes\FixedWindow.xaml;Themes\LinkButton.xaml;Themes\GroupListBox.xaml;Themes\Generic.xaml;
 
-False
+True
 

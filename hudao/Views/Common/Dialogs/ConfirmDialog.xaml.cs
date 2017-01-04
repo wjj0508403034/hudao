@@ -16,6 +16,16 @@ namespace hudao.Views.Common.Dialogs
             InitializeComponent();
         }
 
+        private object dialogContent;
+        public object DialogContent
+        {
+            get { return this.dialogContent; }
+            set
+            {
+                this.dialogContent = value;
+                this.OnDialogContentChanged();
+            }
+        }
         public string OKButtonText;
         public string CancelButtonText;
 
@@ -66,6 +76,20 @@ namespace hudao.Views.Common.Dialogs
             }
         }
 
+        public override void CloseDialog()
+        {
+            if (this.onCancelButtonClicked != null)
+            {
+                this.CancelButtonClicked -= this.onCancelButtonClicked;
+            }
+
+            if (this.onOKButtonClicked != null)
+            {
+                this.OKButtonClicked -= this.onOKButtonClicked;
+            }
+            base.CloseDialog();
+        }
+
         protected override void ApplyButtonTexts()
         {
             base.ApplyButtonTexts();
@@ -78,6 +102,11 @@ namespace hudao.Views.Common.Dialogs
             {
                 this.CancelButton.Content = this.CancelButtonText;
             }
+        }
+
+        private void OnDialogContentChanged()
+        {
+            this.DialogContentPresenter.Content = this.DialogContent;
         }
     }
 }

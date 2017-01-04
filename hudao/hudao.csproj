@@ -121,6 +121,9 @@
     <Compile Include="Views\Inventory\CreateView.xaml.cs">
       <DependentUpon>CreateView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Inventory\Index\ConfirmDeliveryDialogContent.xaml.cs">
+      <DependentUpon>ConfirmDeliveryDialogContent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Inventory\Index\RightPanel.xaml.cs">
       <DependentUpon>RightPanel.xaml</DependentUpon>
     </Compile>
@@ -183,6 +186,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Inventory\CreateView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Inventory\Index\ConfirmDeliveryDialogContent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
