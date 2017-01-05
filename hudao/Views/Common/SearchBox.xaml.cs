@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using Controllers.Controls.Text;
 using hudao.Utils;
 
 namespace hudao.Views.Common
@@ -20,6 +21,24 @@ namespace hudao.Views.Common
             set
             {
                 this.SeachTextBox.Text = value;
+            }
+        }
+
+        public string Pattern
+        {
+            get { return TextExtension.GetPattern(this.SeachTextBox); }
+            set
+            {
+                TextExtension.SetPattern(this.SeachTextBox, value);
+            }
+        }
+
+        public string PlaceHoldeText
+        {
+            get { return this.PlaceHolderBox.Text; }
+            set
+            {
+                this.PlaceHolderBox.Text = value;
             }
         }
 

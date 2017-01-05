@@ -16,7 +16,7 @@
                 <RowDefinition Height="50" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Common:SearchBox x:Name="SearchBox"></Common:SearchBox>
+            <Common:SearchBox x:Name="SearchBox" PlaceHoldeText="你可以通过手机号搜索会员" Pattern="[0-9]+"></Common:SearchBox>
             <KeyBoards:NumberKeyBoard Grid.Row="1" KeyButtonClicked="OnKeyButtonClicked"></KeyBoards:NumberKeyBoard>
         </Grid>
         
