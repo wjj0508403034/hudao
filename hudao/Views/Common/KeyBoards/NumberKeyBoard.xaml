@@ -1,0 +1,58 @@
+﻿<KeyBoards:KeyBoard x:Class="hudao.Views.Common.KeyBoards.NumberKeyBoard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" Background="White"
+          xmlns:KeyBoards="clr-namespace:hudao.Views.Common.KeyBoards"
+             mc:Ignorable="d" BorderBrush="{DynamicResource LineBrush}" BorderThickness="1"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,1,1">
+            <Button Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.One}">1</Button>
+        </Border>
+        <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,1,1" Grid.Column="1" >
+            <Button Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.Two}">2</Button>
+        </Border>
+        <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,0,1" Grid.Column="2" >
+            <Button Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.Three}">3</Button>
+        </Border>
+        <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,1,1" Grid.Row="1">
+            <Button Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.Four}">4</Button>
+        </Border>
+        <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="1">
+            <Button Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.Five}">5</Button>
+        </Border>
+        <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,0,1" Grid.Column="2" Grid.Row="1">
+            <Button Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.Six}">6</Button>
+        </Border>
+        <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,1,1" Grid.Row="2">
+            <Button Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.Seven}">7</Button>
+        </Border>
+        <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,1,1" Grid.Column="1" Grid.Row="2">
+            <Button Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.Eight}">8</Button>
+        </Border>
+        <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,0,1" Grid.Column="2" Grid.Row="2">
+            <Button Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.Nine}">9</Button>
+        </Border>
+        <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,1,0"  Grid.Row="3">
+            <Button Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.Zero}">0</Button>
+        </Border>
+        <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,1,0"  Grid.Column="1"  Grid.Row="3">
+
+        </Border>
+        <Border BorderBrush="{DynamicResource LineBrush}"   Grid.Column="2" Grid.Row="3">
+
+        </Border>
+    </Grid>
+</KeyBoards:KeyBoard>

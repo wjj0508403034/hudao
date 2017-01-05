@@ -13,7 +13,7 @@
             <RowDefinition Height="202*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Common:TitlePanel Title="xxxx" HideBack="True"></Common:TitlePanel>
+        <Common:TitlePanel Title="xxxx" BackButtonVisibility="Hidden"></Common:TitlePanel>
         <StackPanel Orientation="Vertical" Grid.Row="1">
             <Border Background="White" BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,0,1">
                 <StackPanel x:Name="DocumentHeaderPanel" Orientation="Vertical" Margin="20,0" >

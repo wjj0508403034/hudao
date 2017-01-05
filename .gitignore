@@ -5,3 +5,4 @@ hudao/bin/*
 hudao/obj/*
 hudao/hudao.csproj.user
 packages/*
+Controllers/bin/*

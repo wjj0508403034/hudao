@@ -23,12 +23,12 @@ namespace hudao.Views.Common
                           string.Empty,
                           new PropertyChangedCallback(OnTitleChanged)));
 
-        public static readonly DependencyProperty HideBackProperty =
+        public static readonly DependencyProperty BackButtonVisibilityProperty =
           DependencyProperty.Register(
-                  "HideBack",
-                  typeof(bool),
+                  "BackButtonVisibility",
+                  typeof(Visibility),
                   typeof(TitlePanel), new FrameworkPropertyMetadata(
-                          false,
+                          Visibility.Visible,
                           FrameworkPropertyMetadataOptions.AffectsMeasure,
                           new PropertyChangedCallback(OnHideBackChanged)));
 
@@ -41,10 +41,10 @@ namespace hudao.Views.Common
         }
 
         [Bindable(true)]
-        public bool HideBack
+        public Visibility BackButtonVisibility
         {
-            get { return (bool)GetValue(HideBackProperty); }
-            set { SetValue(HideBackProperty, value); }
+            get { return (Visibility)GetValue(BackButtonVisibilityProperty); }
+            set { SetValue(BackButtonVisibilityProperty, value); }
         }
 
         private ButtonClickEventHandler onBackButtonClicked;
@@ -72,7 +72,7 @@ namespace hudao.Views.Common
         private static void OnHideBackChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             var titlePanel = (TitlePanel)d;
-            titlePanel.BackButton.Visibility = titlePanel.HideBack ? Visibility.Hidden : Visibility.Visible;
+            titlePanel.BackButton.Visibility = titlePanel.BackButtonVisibility;
         }
 
         private void OnBackButtonClick(object sender, RoutedEventArgs e)

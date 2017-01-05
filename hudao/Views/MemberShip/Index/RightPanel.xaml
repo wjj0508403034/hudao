@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="hudao.Views.MemberShip.Index.RightPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:KeyBoards="clr-namespace:hudao.Views.Common.KeyBoards"
+             xmlns:Common="clr-namespace:hudao.Views.Common" mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Common:SearchBox x:Name="SearchBox"></Common:SearchBox>
+            <KeyBoards:NumberKeyBoard Grid.Row="1" KeyButtonClicked="OnKeyButtonClicked"></KeyBoards:NumberKeyBoard>
+        </Grid>
+        
+        <StackPanel Grid.Row="1" Height="50" Orientation="Horizontal" Background="White" FlowDirection="RightToLeft">
+            <Button Style="{DynamicResource PrimaryButtonStyle}" Width="120" Click="OnSearchButtonClick">搜索会员</Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

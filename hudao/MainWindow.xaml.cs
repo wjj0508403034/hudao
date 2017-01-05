@@ -1,5 +1,5 @@
 ﻿using hudao.Core;
-using hudao.Views.Inventory.Index;
+using hudao.Views.MemberShip.Index;
 
 namespace hudao
 {

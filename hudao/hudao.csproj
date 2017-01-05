@@ -85,6 +85,8 @@
     </ApplicationDefinition>
     <Compile Include="Core\EventHandlers\ButtonClickEventHandler.cs" />
     <Compile Include="Core\EventHandlers\DialogButtonClickEventHandler.cs" />
+    <Compile Include="Core\EventHandlers\KeyBoardButtonClickEventHandler.cs" />
+    <Compile Include="Utils\StringUtils.cs" />
     <Compile Include="Views\Common\Dialogs\ConfirmDialog.xaml.cs">
       <DependentUpon>ConfirmDialog.xaml</DependentUpon>
     </Compile>
@@ -93,8 +95,17 @@
       <DependentUpon>InfoDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Common\Dialogs\InfoLevelcs.cs" />
+    <Compile Include="Views\Common\KeyBoards\KeyAttribute.cs" />
+    <Compile Include="Views\Common\KeyBoards\KeyBoard.cs" />
+    <Compile Include="Views\Common\KeyBoards\KeyCode.cs" />
+    <Compile Include="Views\Common\KeyBoards\NumberKeyBoard.xaml.cs">
+      <DependentUpon>NumberKeyBoard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Common\PropertyField.xaml.cs">
       <DependentUpon>PropertyField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\SearchBox.xaml.cs">
+      <DependentUpon>SearchBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Common\SideHeader.xaml.cs">
       <DependentUpon>SideHeader.xaml</DependentUpon>
@@ -141,6 +152,15 @@
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\MemberShip\Index\IndexView.xaml.cs">
+      <DependentUpon>IndexView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MemberShip\Index\LeftPanel.xaml.cs">
+      <DependentUpon>LeftPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MemberShip\Index\RightPanel.xaml.cs">
+      <DependentUpon>RightPanel.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -169,11 +189,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Common\KeyBoards\NumberKeyBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Common\Message.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Common\PropertyField.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Common\SearchBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -214,6 +242,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MemberShip\Index\IndexView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MemberShip\Index\LeftPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MemberShip\Index\RightPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,16 @@
+﻿<Core:BaseView x:Class="hudao.Views.MemberShip.Index.IndexView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:Core="clr-namespace:hudao.Core"
+             xmlns:Index="clr-namespace:hudao.Views.MemberShip.Index" mc:Ignorable="d"  Background="{DynamicResource BackgroundBrush}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Index:LeftPanel></Index:LeftPanel>
+        <Index:RightPanel Grid.Column="1"></Index:RightPanel>
+    </Grid>
+</Core:BaseView>
