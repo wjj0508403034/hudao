@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Configuration;
+using System.Windows;
 using hudao.Core;
 using hudao.Views.SalesReturn.Create;
 
@@ -12,6 +13,7 @@ namespace hudao
         public MainWindow()
         {
             InitializeComponent();
+            var ss = ConfigurationManager.GetSection("hudao");
             Navigator.Current.GotoView(new CreateView());
         }
 

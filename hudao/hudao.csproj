@@ -65,6 +65,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -83,6 +84,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Configuration\HuDaoConfigurationSection.cs" />
+    <Compile Include="Configuration\ServiceConfigurationElement.cs" />
     <Compile Include="Core\EventHandlers\ButtonClickEventHandler.cs" />
     <Compile Include="Core\EventHandlers\DialogButtonClickEventHandler.cs" />
     <Compile Include="Core\EventHandlers\KeyBoardButtonClickEventHandler.cs" />
