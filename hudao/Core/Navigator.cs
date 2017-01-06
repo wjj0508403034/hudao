@@ -80,6 +80,16 @@ namespace hudao.Core
             return MainWindow.MenuVisibility == Visibility.Visible;
         }
 
+        public void ShowLoading(string loadingText = null)
+        {
+            MainWindow.LoadingVisibility = Visibility.Visible;
+        }
+
+        public void HideLoading()
+        {
+            MainWindow.LoadingVisibility = Visibility.Hidden;
+        }
+
         public void ShowDialog(IDialog dialog)
         {
 

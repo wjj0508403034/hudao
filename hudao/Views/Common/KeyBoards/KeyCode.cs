@@ -30,7 +30,11 @@
         Eight = 8,
 
         [KeyAttribute(StringValue = "9", IntValue = 9)]
-        Nine = 9
+        Nine = 9,
+
+        [KeyAttribute(StringValue = ".", IntValue = int.MinValue)]
+        Point = 10
+
     }
 
     public static class KeyCodeExtension

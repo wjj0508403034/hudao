@@ -1,6 +1,5 @@
 ﻿using System.Windows;
 using hudao.Core;
-using hudao.Views.MemberShip.Index;
 using hudao.Views.SalesReturn.Create;
 
 namespace hudao
@@ -20,6 +19,12 @@ namespace hudao
         {
             get { return this.MenuBar.Visibility; }
             set { this.MenuBar.Visibility = value; }
+        }
+
+        public Visibility LoadingVisibility
+        {
+            get { return this.LoadingPanel.Visibility; }
+            set { this.LoadingPanel.Visibility = value; }
         }
 
         public object ViewContent

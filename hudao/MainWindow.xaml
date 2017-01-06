@@ -19,6 +19,7 @@
             </Grid>
             <StackPanel Orientation="Vertical" x:Name="MessageContainer" x:FieldModifier="private">
             </StackPanel>
+            <Common:LoadingPanel x:Name="LoadingPanel" x:FieldModifier="private" Visibility="Hidden"></Common:LoadingPanel>
         </Grid>
     </AdornerDecorator>
 </Window>

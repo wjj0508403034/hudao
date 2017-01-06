@@ -11,5 +11,11 @@ namespace hudao.Views.Common.KeyBoards
         {
             InitializeComponent();
         }
+
+        public Visibility PointButtonVisibility
+        {
+            get { return this.PointButton.Visibility; }
+            set { this.PointButton.Visibility = value; }
+        }
     }
 }

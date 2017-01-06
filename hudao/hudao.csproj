@@ -107,6 +107,9 @@
     <Compile Include="Views\Common\KeyBoards\NumberKeyBoard.xaml.cs">
       <DependentUpon>NumberKeyBoard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Common\LoadingPanel.xaml.cs">
+      <DependentUpon>LoadingPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Common\MenuBar.xaml.cs">
       <DependentUpon>MenuBar.xaml</DependentUpon>
     </Compile>
@@ -210,6 +213,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Common\KeyBoards\NumberKeyBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Common\LoadingPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

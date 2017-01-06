@@ -49,7 +49,7 @@
             <Button Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.Zero}">0</Button>
         </Border>
         <Border BorderBrush="{DynamicResource LineBrush}" BorderThickness="0,0,1,0"  Grid.Column="1"  Grid.Row="3">
-
+            <Button x:Name="PointButton" Style="{DynamicResource KeyBoardButtonStyle}" Click="OnKeyButtonClick" Tag="{x:Static KeyBoards:KeyCode.Point}">.</Button>
         </Border>
         <Border BorderBrush="{DynamicResource LineBrush}"   Grid.Column="2" Grid.Row="3">
 
