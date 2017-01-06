@@ -37,13 +37,13 @@
                     </StackPanel>
                 </Common:PropertyField.ValueContent>
             </Common:PropertyField>
-            <Common:PropertyField KeyContentWidth="100" ValueContentWidth="350" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
+            <Common:PropertyField KeyContentVerticalAlignment="Top" KeyContentWidth="100" ValueContentWidth="350" Height="Auto" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
                 <Common:PropertyField.KeyContent>
-                    <Common:FieldLabel LabelContent="封箱条码"></Common:FieldLabel>
+                    <Common:FieldLabel LabelContent="封箱条码" ></Common:FieldLabel>
                 </Common:PropertyField.KeyContent>
                 <Common:PropertyField.ValueContent>
-                    <TextBox Height="35" VerticalContentAlignment="Center"></TextBox>
-                </Common:PropertyField.ValueContent>
+                    <Common:TextInputBox BoxHeight="35" BoxContentVerticalAlignment="Center"  ErrorContent="字段必填，不能为空。"  HasError="False"></Common:TextInputBox>
+           </Common:PropertyField.ValueContent>
             </Common:PropertyField>
             <Common:PropertyField Height="80" KeyContentVerticalAlignment="Top" KeyContentWidth="100" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
                 <Common:PropertyField.KeyContent>

@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" 
+             mc:Ignorable="d" MinHeight="35"
              d:DesignHeight="50" d:DesignWidth="300">
     <StackPanel Orientation="Horizontal">
-        <TextBlock x:Name="Star" Foreground="Red" x:FieldModifier="private" Margin="0,0,3,0">*</TextBlock>
-        <ContentPresenter x:Name="Label" x:FieldModifier="private"></ContentPresenter>
+        <TextBlock x:Name="Star" Foreground="Red" x:FieldModifier="private" Margin="0,0,3,0" VerticalAlignment="Center">*</TextBlock>
+        <ContentPresenter x:Name="Label" x:FieldModifier="private" VerticalAlignment="Center"></ContentPresenter>
     </StackPanel>
 </UserControl>

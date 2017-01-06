@@ -122,6 +122,9 @@
     <Compile Include="Views\Common\SideHeader.xaml.cs">
       <DependentUpon>SideHeader.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Common\TextInputBox.xaml.cs">
+      <DependentUpon>TextInputBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Common\TitlePanel.xaml.cs">
       <DependentUpon>TitlePanel.xaml</DependentUpon>
     </Compile>
@@ -235,6 +238,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Common\SideHeader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Common\TextInputBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

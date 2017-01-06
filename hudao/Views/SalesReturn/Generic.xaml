@@ -4,6 +4,7 @@
 
     <Style x:Key="SalesReturnCreateViewPropertyStyle" TargetType="{x:Type Common:PropertyField}">
         <Setter Property="Height" Value="35"></Setter>
+        <Setter Property="MinHeight" Value="35"></Setter>
         <Setter Property="Margin" Value="0,5"></Setter>
     </Style>
 </ResourceDictionary>
