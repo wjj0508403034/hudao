@@ -1,0 +1,74 @@
+﻿<Core:BaseView x:Class="hudao.Views.SalesReturn.Create.CreateView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:Core="clr-namespace:hudao.Core"
+               xmlns:Common="clr-namespace:hudao.Views.Common" mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Common:TitlePanel Title="新建退货单" BackButtonClicked="TitlePanel_BackButtonClicked"></Common:TitlePanel>
+        <StackPanel Grid.Row="1" Margin="100,20">
+            <Common:PropertyField KeyContentWidth="100" ValueContentWidth="350" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
+                <Common:PropertyField.KeyContent>
+                    <Common:FieldLabel LabelContent="退货方向"></Common:FieldLabel>
+                </Common:PropertyField.KeyContent>
+                <Common:PropertyField.ValueContent>
+                    <ComboBox></ComboBox>
+                </Common:PropertyField.ValueContent>
+            </Common:PropertyField>
+            <Common:PropertyField KeyContentWidth="100" ValueContentWidth="350" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
+                <Common:PropertyField.KeyContent>
+                    <Common:FieldLabel LabelContent="退货类型"></Common:FieldLabel>
+                </Common:PropertyField.KeyContent>
+                <Common:PropertyField.ValueContent>
+                    <ComboBox ></ComboBox>
+                </Common:PropertyField.ValueContent>
+            </Common:PropertyField>
+            <Common:PropertyField KeyContentWidth="100" ValueContentWidth="350" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
+                <Common:PropertyField.ValueContent>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Content="虚拟退货"></CheckBox>
+                        <CheckBox Content="残次" Margin="10,0,0,0"></CheckBox>
+                    </StackPanel>
+                </Common:PropertyField.ValueContent>
+            </Common:PropertyField>
+            <Common:PropertyField KeyContentWidth="100" ValueContentWidth="350" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
+                <Common:PropertyField.KeyContent>
+                    <Common:FieldLabel LabelContent="封箱条码"></Common:FieldLabel>
+                </Common:PropertyField.KeyContent>
+                <Common:PropertyField.ValueContent>
+                    <TextBox></TextBox>
+                </Common:PropertyField.ValueContent>
+            </Common:PropertyField>
+            <Common:PropertyField Height="60" KeyContentVerticalAlignment="Top" KeyContentWidth="100" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
+                <Common:PropertyField.KeyContent>
+                    <Common:FieldLabel LabelContent="退货原因"></Common:FieldLabel>
+                </Common:PropertyField.KeyContent>
+                <Common:PropertyField.ValueContent>
+                    <TextBox Height="60"></TextBox>
+                </Common:PropertyField.ValueContent>
+            </Common:PropertyField>
+            <Common:PropertyField Height="60"  KeyContentVerticalAlignment="Top" KeyContentWidth="100" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
+                <Common:PropertyField.KeyContent>
+                    <Common:FieldLabel StarVisibility="Hidden" LabelContent="退货原因" VerticalAlignment="Top"></Common:FieldLabel>
+                </Common:PropertyField.KeyContent>
+                <Common:PropertyField.ValueContent>
+                    <TextBox Height="60"></TextBox>
+                </Common:PropertyField.ValueContent>
+            </Common:PropertyField>
+        </StackPanel>
+        <Common:FooterBar Grid.Row="2">
+            <Common:FooterBar.FooterContent>
+                <StackPanel Orientation="Horizontal"  FlowDirection="RightToLeft">
+                    <Button Style="{DynamicResource PrimaryButtonStyle}" Width="120" HorizontalAlignment="Right" >添加商品</Button>
+                    <Button Style="{DynamicResource NormalButtonStyle}" Width="120" HorizontalAlignment="Right" >保存并返回</Button>
+                </StackPanel>
+            </Common:FooterBar.FooterContent>
+        </Common:FooterBar>
+    </Grid>
+</Core:BaseView>

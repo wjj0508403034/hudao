@@ -7,10 +7,11 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*" MaxWidth="150"/>
-            <ColumnDefinition Width="3*" />
+            <ColumnDefinition x:Name="KeyContentColumn" Width="2*" x:FieldModifier="private" />
+            <ColumnDefinition x:Name="ValueContentColumn" x:FieldModifier="private" Width="3*" />
         </Grid.ColumnDefinitions>
-        <ContentPresenter x:Name="KeyContentPresenter" VerticalAlignment="Center"></ContentPresenter>
-        <ContentPresenter Grid.Column="1" x:Name="ValueContentPresenter" VerticalAlignment="Center"></ContentPresenter>
+        <ContentPresenter x:Name="KeyContentPresenter" VerticalAlignment="Center" x:FieldModifier="private"></ContentPresenter>
+        <ContentPresenter Grid.Column="1" x:Name="ValueContentPresenter" VerticalAlignment="Center"
+                          x:FieldModifier="private"></ContentPresenter>
     </Grid>
 </UserControl>

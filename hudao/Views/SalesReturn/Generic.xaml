@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:Common="clr-namespace:hudao.Views.Common">
+
+    <Style x:Key="SalesReturnCreateViewPropertyStyle" TargetType="{x:Type Common:PropertyField}">
+        <Setter Property="Height" Value="40"></Setter>
+        <Setter Property="Margin" Value="0,5"></Setter>
+    </Style>
+</ResourceDictionary>

@@ -95,11 +95,20 @@
       <DependentUpon>InfoDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Common\Dialogs\InfoLevelcs.cs" />
+    <Compile Include="Views\Common\FieldLabel.xaml.cs">
+      <DependentUpon>FieldLabel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\FooterBar.xaml.cs">
+      <DependentUpon>FooterBar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Common\KeyBoards\KeyAttribute.cs" />
     <Compile Include="Views\Common\KeyBoards\KeyBoard.cs" />
     <Compile Include="Views\Common\KeyBoards\KeyCode.cs" />
     <Compile Include="Views\Common\KeyBoards\NumberKeyBoard.xaml.cs">
       <DependentUpon>NumberKeyBoard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\MenuBar.xaml.cs">
+      <DependentUpon>MenuBar.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Common\PropertyField.xaml.cs">
       <DependentUpon>PropertyField.xaml</DependentUpon>
@@ -161,6 +170,9 @@
     <Compile Include="Views\MemberShip\Index\RightPanel.xaml.cs">
       <DependentUpon>RightPanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SalesReturn\Create\CreateView.xaml.cs">
+      <DependentUpon>CreateView.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -185,11 +197,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Common\FieldLabel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Common\FooterBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Common\Generic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Common\KeyBoards\NumberKeyBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Common\MenuBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -257,6 +281,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\SalesReturn\Create\CreateView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SalesReturn\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -315,6 +347,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\Materials\Record\" />
     <Folder Include="Widgets\" />
   </ItemGroup>
   <ItemGroup>

@@ -25,14 +25,24 @@
         <Setter Property="Template" >
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border  BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="2">
-                        <Border Margin="{TemplateBinding Padding}" Background="{TemplateBinding Background}" CornerRadius="2">
+                    <Border CornerRadius="2">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Margin="{TemplateBinding Padding}" Background="{TemplateBinding Background}" CornerRadius="2">
                             <ContentPresenter TextBlock.Foreground="{TemplateBinding Foreground}" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Border>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+    </Style>
+
+    <Style x:Key="NormalButtonStyle" TargetType="{x:Type Button}" BasedOn="{StaticResource PrimaryButtonStyle}">
+        <Setter Property="Height" Value="50"></Setter>
+        <Setter Property="Padding" Value="8"></Setter>
+        <Setter Property="BorderBrush" Value="{DynamicResource LineBrush}"></Setter>
+        <Setter Property="BorderThickness" Value="1"></Setter>
+        <Setter Property="Background" Value="White"></Setter>
+        <Setter Property="Foreground" Value="Black"></Setter>
+        <Setter Property="Cursor" Value="Hand"></Setter>
     </Style>
 
     <Style x:Key="NoBackgroundButtonStyle" TargetType="{x:Type Button}">
