@@ -5,16 +5,20 @@
         Title="MainWindow" Height="768" Width="1024">
     <AdornerDecorator>
         <Grid>
-            <Grid>
+            <Grid Background="{DynamicResource WindowBrush}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Common:MenuBar x:Name="MenuBar" Visibility="Collapsed" x:FieldModifier="private"></Common:MenuBar>
+
                 <ScrollViewer Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Auto">
-                    <ContentControl x:Name="ViewContainer" Width="{Binding ElementName=MainWindowContainer,Path=Width}"
+                    <Border Margin="{Binding Visibility,ElementName=MenuBar,Converter={StaticResource MainViewMarginConverter}}" Background="{DynamicResource BackgroundBrush}">
+                        <ContentControl  x:Name="ViewContainer" Width="{Binding ElementName=MainWindowContainer,Path=Width}" 
                                     x:FieldModifier="private">
-                    </ContentControl>
+                        </ContentControl>
+                    </Border>
+
                 </ScrollViewer>
             </Grid>
             <StackPanel Orientation="Vertical" x:Name="MessageContainer" x:FieldModifier="private">

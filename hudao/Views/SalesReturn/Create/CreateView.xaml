@@ -4,21 +4,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:Core="clr-namespace:hudao.Core"
                xmlns:Common="clr-namespace:hudao.Views.Common" mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="500">
+             d:DesignHeight="500" d:DesignWidth="700">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="50" />
         </Grid.RowDefinitions>
-        <Common:TitlePanel Title="新建退货单" BackButtonClicked="TitlePanel_BackButtonClicked"></Common:TitlePanel>
+        <Common:TitlePanel Title="新建退货单" BackButtonClicked="BackButtonClicked"></Common:TitlePanel>
         <StackPanel Grid.Row="1" Margin="100,20">
             <Common:PropertyField KeyContentWidth="100" ValueContentWidth="350" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
                 <Common:PropertyField.KeyContent>
                     <Common:FieldLabel LabelContent="退货方向"></Common:FieldLabel>
                 </Common:PropertyField.KeyContent>
                 <Common:PropertyField.ValueContent>
-                    <ComboBox></ComboBox>
+                    <ComboBox Style="{DynamicResource DefaultComboBoxStyle}"></ComboBox>
                 </Common:PropertyField.ValueContent>
             </Common:PropertyField>
             <Common:PropertyField KeyContentWidth="100" ValueContentWidth="350" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
@@ -26,7 +26,7 @@
                     <Common:FieldLabel LabelContent="退货类型"></Common:FieldLabel>
                 </Common:PropertyField.KeyContent>
                 <Common:PropertyField.ValueContent>
-                    <ComboBox ></ComboBox>
+                    <ComboBox Style="{DynamicResource DefaultComboBoxStyle}"></ComboBox>
                 </Common:PropertyField.ValueContent>
             </Common:PropertyField>
             <Common:PropertyField KeyContentWidth="100" ValueContentWidth="350" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
@@ -42,31 +42,31 @@
                     <Common:FieldLabel LabelContent="封箱条码"></Common:FieldLabel>
                 </Common:PropertyField.KeyContent>
                 <Common:PropertyField.ValueContent>
-                    <TextBox></TextBox>
+                    <TextBox Height="35" VerticalContentAlignment="Center"></TextBox>
                 </Common:PropertyField.ValueContent>
             </Common:PropertyField>
-            <Common:PropertyField Height="60" KeyContentVerticalAlignment="Top" KeyContentWidth="100" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
+            <Common:PropertyField Height="80" KeyContentVerticalAlignment="Top" KeyContentWidth="100" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
                 <Common:PropertyField.KeyContent>
                     <Common:FieldLabel LabelContent="退货原因"></Common:FieldLabel>
                 </Common:PropertyField.KeyContent>
                 <Common:PropertyField.ValueContent>
-                    <TextBox Height="60"></TextBox>
+                    <TextBox Height="80"></TextBox>
                 </Common:PropertyField.ValueContent>
             </Common:PropertyField>
-            <Common:PropertyField Height="60"  KeyContentVerticalAlignment="Top" KeyContentWidth="100" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
+            <Common:PropertyField Height="80"  KeyContentVerticalAlignment="Top" KeyContentWidth="100" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
                 <Common:PropertyField.KeyContent>
                     <Common:FieldLabel StarVisibility="Hidden" LabelContent="退货原因" VerticalAlignment="Top"></Common:FieldLabel>
                 </Common:PropertyField.KeyContent>
                 <Common:PropertyField.ValueContent>
-                    <TextBox Height="60"></TextBox>
+                    <TextBox Height="80"></TextBox>
                 </Common:PropertyField.ValueContent>
             </Common:PropertyField>
         </StackPanel>
         <Common:FooterBar Grid.Row="2">
             <Common:FooterBar.FooterContent>
                 <StackPanel Orientation="Horizontal"  FlowDirection="RightToLeft">
-                    <Button Style="{DynamicResource PrimaryButtonStyle}" Width="120" HorizontalAlignment="Right" >添加商品</Button>
-                    <Button Style="{DynamicResource NormalButtonStyle}" Width="120" HorizontalAlignment="Right" >保存并返回</Button>
+                    <Button Style="{DynamicResource PrimaryButtonStyle}" Click="AddButtonClick"  Width="120" HorizontalAlignment="Right" >添加商品</Button>
+                    <Button Style="{DynamicResource NormalButtonStyle}" Click="SaveAndBackButtonClick" Width="120" HorizontalAlignment="Right" >保存并返回</Button>
                 </StackPanel>
             </Common:FooterBar.FooterContent>
         </Common:FooterBar>

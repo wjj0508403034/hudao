@@ -161,9 +161,7 @@
     </Compile>
     <Compile Include="Views\Inventory\Status.cs" />
     <Compile Include="Views\Inventory\Test.cs" />
-    <Compile Include="Views\MainView.xaml.cs">
-      <DependentUpon>MainView.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Views\MainView\Converters\MainViewMarginConverter.cs" />
     <Compile Include="Views\MemberShip\Index\IndexView.xaml.cs">
       <DependentUpon>IndexView.xaml</DependentUpon>
     </Compile>
@@ -272,9 +270,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\MainView.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Views\MainView\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\MemberShip\Index\IndexView.xaml">
       <SubType>Designer</SubType>

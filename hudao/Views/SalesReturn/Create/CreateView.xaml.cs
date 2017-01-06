@@ -14,9 +14,19 @@ namespace hudao.Views.SalesReturn.Create
             InitializeComponent();
         }
 
-        private void TitlePanel_BackButtonClicked(Button button, RoutedEventArgs e)
+        private void BackButtonClicked(Button button, RoutedEventArgs e)
         {
             Navigator.Current.ToggleMenu();
+        }
+
+        private void SaveAndBackButtonClick(object sender, RoutedEventArgs e)
+        {
+            Navigator.Current.BackView();
+        }
+
+        private void AddButtonClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
