@@ -12,10 +12,6 @@ namespace hudao.Views.Common.Menu
         public MenuBar()
         {
             InitializeComponent();
-            this.MenuItemChanged += this.MenuItem1.OnMenuItemChanged;
-            this.MenuItemChanged += this.MenuItem2.OnMenuItemChanged;
-            this.MenuItemChanged += this.MenuItem3.OnMenuItemChanged;
-            this.MenuItemChanged += this.MenuItem4.OnMenuItemChanged;
         }
 
         public MenuItem SelectedMenuItem { get; private set; }
@@ -36,6 +32,11 @@ namespace hudao.Views.Common.Menu
 
         private void OnMenuItemClicked(MenuItem menuItem, MouseButtonEventArgs e)
         {
+            if(!menuItem.IsBindedMenuItemChangedEvent)
+            {
+                menuItem.IsBindedMenuItemChangedEvent = true;
+                this.MenuItemChanged += menuItem.OnMenuItemChanged;
+            }
             var oldMenuItem = this.SelectedMenuItem;
             this.SelectedMenuItem = menuItem;
             if (this.menuItemChanged != null)

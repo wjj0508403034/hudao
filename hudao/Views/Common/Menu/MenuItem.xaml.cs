@@ -65,6 +65,8 @@ namespace hudao.Views.Common.Menu
             }
         }
 
+        public bool IsBindedMenuItemChangedEvent { get; set; }
+
         public void OnMenuItemChanged(MenuBar menuBar, MenuChangeEventArgs e)
         {
             this.IsSelected = e.NewMenuItem == this;

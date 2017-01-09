@@ -6,7 +6,7 @@
              xmlns:Common="clr-namespace:hudao.Views.Common" xmlns:Menu="clr-namespace:hudao.Views.Common.Menu"
              xmlns:fa="http://schemas.fontawesome.io/icons/" xmlns:Index="clr-namespace:hudao.Views.Inventory.Index"
              mc:Ignorable="d" Width="300" Foreground="White"
-             d:DesignHeight="600" d:DesignWidth="300" Height="600">
+             d:DesignHeight="600" d:DesignWidth="300">
     <Grid Margin="20,10">
         <Grid.RowDefinitions>
             <RowDefinition Height="100" />
@@ -14,38 +14,52 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="100" />
         </Grid.RowDefinitions>
-        <Common:CirclePanel>
-            <Common:CirclePanel.PanelContent>
-                <Image Source="/hudao;component/imgs/user.png"></Image>
-            </Common:CirclePanel.PanelContent>
-        </Common:CirclePanel>
-        <Common:PropertyField Grid.Row="1" KeyContent="收银员" ValueContent="同曦"></Common:PropertyField>
+        <Border Height="80">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Common:CirclePanel>
+                    <Common:CirclePanel.PanelContent>
+                        <Image Source="/hudao;component/imgs/user.png"></Image>
+                    </Common:CirclePanel.PanelContent>
+                </Common:CirclePanel>
+                <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                    <TextBlock>XX公司</TextBlock>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Grid Grid.Row="1">
+            <Common:PropertyField  KeyContent="收银员" ValueContent="同曦"></Common:PropertyField>
+        </Grid>
+        
         <StackPanel Grid.Row="2" Margin="-20,0">
-            <Menu:MenuItem x:Name="MenuItem1" MenuContent="开单" MenuContentVerticalAlignment="Center" MenuItemClicked="OnMenuItemClicked"
-                           x:FieldModifier="private" Tag="{x:Type Index:IndexView}">
+            <Menu:MenuItem  MenuContent="开单" MenuContentVerticalAlignment="Center" MenuItemClicked="OnMenuItemClicked"
+                            Tag="{x:Type Index:IndexView}">
                 <Menu:MenuItem.Icon>
                     <fa:ImageAwesome Icon="Search" Style="{DynamicResource MenuIconStype}"/>
                 </Menu:MenuItem.Icon>
             </Menu:MenuItem>
-            <Menu:MenuItem x:Name="MenuItem2" MenuContent="开单" MenuContentVerticalAlignment="Center" MenuItemClicked="OnMenuItemClicked"
-                           x:FieldModifier="private" Tag="{x:Type Index:IndexView}">
+            <Menu:MenuItem  MenuContent="开单" MenuContentVerticalAlignment="Center" MenuItemClicked="OnMenuItemClicked"
+                            Tag="{x:Type Index:IndexView}">
                 <Menu:MenuItem.Icon>
                     <fa:ImageAwesome Icon="Search" Style="{DynamicResource MenuIconStype}"/>
                 </Menu:MenuItem.Icon>
             </Menu:MenuItem>
-            <Menu:MenuItem x:Name="MenuItem3" MenuContent="开单" MenuContentVerticalAlignment="Center" MenuItemClicked="OnMenuItemClicked"
-                           x:FieldModifier="private" Tag="{x:Type Index:IndexView}">
+            <Menu:MenuItem  MenuContent="开单" MenuContentVerticalAlignment="Center" MenuItemClicked="OnMenuItemClicked"
+                           Tag="{x:Type Index:IndexView}">
                 <Menu:MenuItem.Icon>
                     <fa:ImageAwesome Icon="Search" Style="{DynamicResource MenuIconStype}"/>
                 </Menu:MenuItem.Icon>
             </Menu:MenuItem>
-            <Menu:MenuItem x:Name="MenuItem4" MenuContent="开单" MenuContentVerticalAlignment="Center" MenuItemClicked="OnMenuItemClicked"
-                           x:FieldModifier="private" Tag="{x:Type Index:IndexView}">
+            <Menu:MenuItem  MenuContent="开单" MenuContentVerticalAlignment="Center" MenuItemClicked="OnMenuItemClicked"
+                            Tag="{x:Type Index:IndexView}">
                 <Menu:MenuItem.Icon>
                     <fa:ImageAwesome Icon="Search" Style="{DynamicResource MenuIconStype}"/>
                 </Menu:MenuItem.Icon>
             </Menu:MenuItem>
-            <Menu:MenuGroup GroupHeaderContent="test" GroupHeaderContentVerticalAlignment="Center">
+            <Menu:MenuGroup  GroupHeaderContent="test" GroupHeaderContentVerticalAlignment="Center">
                 <Menu:MenuGroup.GroupHeaderIcon>
                     <fa:ImageAwesome Icon="Search" Style="{DynamicResource MenuIconStype}"/>
                 </Menu:MenuGroup.GroupHeaderIcon>
@@ -60,7 +74,8 @@
             </Menu:MenuGroup>
         </StackPanel>
         <StackPanel Grid.Row="3">
-            <TextBlock>版本号：1.0.0</TextBlock>
+            <TextBlock TextAlignment="Center">版本号：1.0.0</TextBlock>
+            <Image Source="/hudao;component/imgs/logo.PNG" Margin="0,10,0,0" Height="40"></Image>
         </StackPanel>
     </Grid>
 </UserControl>

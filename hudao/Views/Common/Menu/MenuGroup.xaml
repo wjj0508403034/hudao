@@ -35,7 +35,7 @@
 
 
         <StackPanel x:Name="MenuItemsPanel" Grid.Row="1" Orientation="Vertical" Visibility="Collapsed"
-                    x:FieldModifier="private">
+                    x:FieldModifier="private" >
 
         </StackPanel>
     </Grid>
