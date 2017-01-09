@@ -3,14 +3,18 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace hudao.Views.MainView.Converters
+namespace Controllers.Converters
 {
-    public class MainViewMarginConverter : IValueConverter
+    public class ReverseBoolToVisibilityConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var visibility = (Visibility)value;
-            return visibility == Visibility.Visible ? new Thickness(0,5,5,5) : new Thickness(0);
+            if (value == null)
+            {
+                return Visibility.Collapsed;
+            }
+
+            return (bool)value ? Visibility.Collapsed : Visibility.Visible;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

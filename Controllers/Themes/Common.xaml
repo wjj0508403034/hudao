@@ -2,4 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:Converters="clr-namespace:Controllers.Converters">
     <Converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    <Converters:ReverseBoolToVisibilityConverter x:Key="ReverseBoolToVisibilityConverter"/>
+    <Converters:ReverseVisibilityConverter x:Key="ReverseVisibilityConverter"></Converters:ReverseVisibilityConverter>
 </ResourceDictionary>

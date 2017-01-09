@@ -44,7 +44,7 @@ namespace hudao.Views.Inventory.Index
 
         private void OnMenuButtonClicked(Button button, RoutedEventArgs e)
         {
-            Navigator.Current.ShowMenu();
+            Navigator.Current.ToggleMenu();
         }
     }
 }

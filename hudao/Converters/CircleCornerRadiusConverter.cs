@@ -3,14 +3,14 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace hudao.Views.MainView.Converters
+namespace hudao.Converters
 {
-    public class MainViewMarginConverter : IValueConverter
+   public  class CircleCornerRadiusConverter:IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var visibility = (Visibility)value;
-            return visibility == Visibility.Visible ? new Thickness(0,5,5,5) : new Thickness(0);
+            var height = (double) value;
+            return new CornerRadius(height/2);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

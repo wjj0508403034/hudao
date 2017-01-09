@@ -59,6 +59,8 @@
     <Compile Include="Controls\Window\FixedWindow.cs" />
     <Compile Include="Controls\Window\ResizedWindow.cs" />
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Converters\ReverseBoolToVisibilityConverter.cs" />
+    <Compile Include="Converters\ReverseVisibilityConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -20,6 +20,17 @@ namespace hudao.Core
 
         private readonly Stack<IView> _histories = new Stack<IView>();
 
+        public void SetView(IView view)
+        {
+            if (view == null)
+            {
+                throw new ArgumentNullException("view");
+            }
+            this._histories.Clear();
+            MainWindow.ViewContent = view;
+            view.OnActive();
+        }
+
         public void GotoView(IView view)
         {
             if (view == null)

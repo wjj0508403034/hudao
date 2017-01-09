@@ -86,10 +86,16 @@
     </ApplicationDefinition>
     <Compile Include="Configuration\HuDaoConfigurationSection.cs" />
     <Compile Include="Configuration\ServiceConfigurationElement.cs" />
+    <Compile Include="Converters\CircleCornerRadiusConverter.cs" />
     <Compile Include="Core\EventHandlers\ButtonClickEventHandler.cs" />
     <Compile Include="Core\EventHandlers\DialogButtonClickEventHandler.cs" />
     <Compile Include="Core\EventHandlers\KeyBoardButtonClickEventHandler.cs" />
+    <Compile Include="Core\EventHandlers\MenuItemChangeEventHandler.cs" />
+    <Compile Include="Core\EventHandlers\MenuItemClickEventHandler.cs" />
     <Compile Include="Utils\StringUtils.cs" />
+    <Compile Include="Views\Common\CirclePanel.xaml.cs">
+      <DependentUpon>CirclePanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Common\Dialogs\ConfirmDialog.xaml.cs">
       <DependentUpon>ConfirmDialog.xaml</DependentUpon>
     </Compile>
@@ -113,8 +119,15 @@
     <Compile Include="Views\Common\LoadingPanel.xaml.cs">
       <DependentUpon>LoadingPanel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Common\MenuBar.xaml.cs">
+    <Compile Include="Views\Common\Menu\MenuBar.xaml.cs">
       <DependentUpon>MenuBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\Menu\MenuChangeEventArgs.cs" />
+    <Compile Include="Views\Common\Menu\MenuGroup.xaml.cs">
+      <DependentUpon>MenuGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\Menu\MenuItem.xaml.cs">
+      <DependentUpon>MenuItem.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Common\PropertyField.xaml.cs">
       <DependentUpon>PropertyField.xaml</DependentUpon>
@@ -196,6 +209,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Common\CirclePanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Common\Dialogs\ConfirmDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -224,7 +241,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Common\MenuBar.xaml">
+    <Page Include="Views\Common\Menu\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Common\Menu\MenuBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Common\Menu\MenuGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Common\Menu\MenuItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -319,6 +348,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Resource Include="imgs\user.png" />
     <Resource Include="imgs\qrcode.jpg" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,7 +1,7 @@
 ﻿<Window x:Class="hudao.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowStartupLocation="CenterScreen"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Common="clr-namespace:hudao.Views.Common"
-        x:Name="MainWindowContainer" BorderBrush="{DynamicResource LineBrush}" BorderThickness="1"
+        xmlns:Menu="clr-namespace:hudao.Views.Common.Menu" x:Name="MainWindowContainer" BorderBrush="{DynamicResource LineBrush}" BorderThickness="1"
         Title="MainWindow" Height="768" Width="1024">
     <AdornerDecorator>
         <Grid>
@@ -10,7 +10,7 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Common:MenuBar x:Name="MenuBar" Visibility="Collapsed" x:FieldModifier="private"></Common:MenuBar>
+                <Menu:MenuBar x:Name="MenuBar" Visibility="Collapsed" x:FieldModifier="private" MenuItemChanged="OnMenuItemChanged"></Menu:MenuBar>
 
                 <ScrollViewer Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Auto">
                     <Border Margin="{Binding Visibility,ElementName=MenuBar,Converter={StaticResource MainViewMarginConverter}}" Background="{DynamicResource BackgroundBrush}">
