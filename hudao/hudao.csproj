@@ -87,6 +87,9 @@
     <Compile Include="Configuration\HuDaoConfigurationSection.cs" />
     <Compile Include="Configuration\ServiceConfigurationElement.cs" />
     <Compile Include="Converters\CircleCornerRadiusConverter.cs" />
+    <Compile Include="Core\Enums\DisplayAttribute.cs" />
+    <Compile Include="Core\Enums\EnumConverter.cs" />
+    <Compile Include="Core\Enums\EnumItem.cs" />
     <Compile Include="Core\EventHandlers\ButtonClickEventHandler.cs" />
     <Compile Include="Core\EventHandlers\DialogButtonClickEventHandler.cs" />
     <Compile Include="Core\EventHandlers\KeyBoardButtonClickEventHandler.cs" />

@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:fa="http://schemas.fontawesome.io/icons/" xmlns:Converters="clr-namespace:hudao.Converters">
+                    xmlns:fa="http://schemas.fontawesome.io/icons/" xmlns:Converters="clr-namespace:hudao.Converters"
+                    xmlns:Enums="clr-namespace:hudao.Core.Enums">
 
     <Brush x:Key="LineBrush">#CCCCCC</Brush>
     <Brush x:Key="ThemeBrush">#4A90E2</Brush>
@@ -14,6 +15,7 @@
     <Brush x:Key="MaskBrush">#26000000</Brush>
     <Brush x:Key="WindowBrush">#E6454242</Brush>
 
+    <Enums:EnumConverter x:Key="EnumConverter"></Enums:EnumConverter>
     <Converters:CircleCornerRadiusConverter x:Key="CircleCornerRadiusConverter"></Converters:CircleCornerRadiusConverter>
 
 

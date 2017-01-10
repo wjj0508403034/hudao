@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:Core="clr-namespace:hudao.Core"
-               xmlns:Common="clr-namespace:hudao.Views.Common" mc:Ignorable="d" 
+               xmlns:Common="clr-namespace:hudao.Views.Common" xmlns:Inventory="clr-namespace:hudao.Views.Inventory"
+               mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="700">
     <Grid>
         <Grid.RowDefinitions>
@@ -26,7 +27,7 @@
                     <Common:FieldLabel LabelContent="退货类型"></Common:FieldLabel>
                 </Common:PropertyField.KeyContent>
                 <Common:PropertyField.ValueContent>
-                    <ComboBox Style="{DynamicResource DefaultComboBoxStyle}"></ComboBox>
+                    <ComboBox ItemsSource="{Binding Source={x:Type Inventory:Status},Converter={StaticResource EnumConverter}}" DisplayMemberPath="DisplayName" SelectedValuePath="Value" Style="{DynamicResource DefaultComboBoxStyle}"></ComboBox>
                 </Common:PropertyField.ValueContent>
             </Common:PropertyField>
             <Common:PropertyField KeyContentWidth="100" ValueContentWidth="350" Style="{DynamicResource SalesReturnCreateViewPropertyStyle}">
