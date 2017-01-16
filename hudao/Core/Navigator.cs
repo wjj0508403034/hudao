@@ -66,12 +66,12 @@ namespace hudao.Core
 
         public void ShowMenu()
         {
-            MainWindow.MenuVisibility = Visibility.Visible;
+            MainWindow.ShowMenu();
         }
 
         public void HideMenu()
         {
-            MainWindow.MenuVisibility = Visibility.Collapsed;
+            MainWindow.HideMenu();
         }
 
         public void ToggleMenu()
@@ -88,7 +88,7 @@ namespace hudao.Core
 
         public bool IsMenuOpen()
         {
-            return MainWindow.MenuVisibility == Visibility.Visible;
+            return MainWindow.IsMenuOpen;
         }
 
         public void ShowLoading(string loadingText = null)

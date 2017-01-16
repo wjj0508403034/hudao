@@ -21,12 +21,6 @@ namespace hudao
             Navigator.Current.GotoView(new CreateView());
         }
 
-        public Visibility MenuVisibility
-        {
-            get { return this.MenuBar.Visibility; }
-            set { this.MenuBar.Visibility = value; }
-        }
-
         public Visibility LoadingVisibility
         {
             get { return this.LoadingPanel.Visibility; }
@@ -47,6 +41,21 @@ namespace hudao
         public void RemoveMessage(UIElement element)
         {
             this.MessageContainer.Children.Remove(element);
+        }
+
+        public bool IsMenuOpen
+        {
+            get { return this.MenuBar.IsOpen; }
+        }
+
+        public void ShowMenu()
+        {
+            this.MenuBar.Show();
+        }
+
+        public void HideMenu()
+        {
+            this.MenuBar.Close();
         }
 
         private void OnMenuItemChanged(MenuBar menuBar, MenuChangeEventArgs e)
