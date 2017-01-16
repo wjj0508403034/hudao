@@ -3,6 +3,8 @@ _ReSharper.hudao/*
 hudao.suo
 hudao/bin/*
 hudao/obj/*
+Controllers/bin/*
+Controllers/obj/*
 hudao/hudao.csproj.user
 packages/*
 Controllers/bin/*
