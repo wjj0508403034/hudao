@@ -7,12 +7,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("huodao")]
+[assembly: AssemblyTitle("hudao")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("SAP SE")]
-[assembly: AssemblyProduct("huodao")]
-[assembly: AssemblyCopyright("Copyright © SAP SE 2016")]
+[assembly: AssemblyCompany("hudao")]
+[assembly: AssemblyProduct("hudao")]
+[assembly: AssemblyCopyright("Copyright © hudao 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

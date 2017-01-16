@@ -3,6 +3,7 @@ _ReSharper.hudao/*
 hudao.suo
 hudao/bin/*
 hudao/obj/*
+hudao/publish/*
 hudao/hudao.csproj.user
 packages/*
 Controllers/bin/*

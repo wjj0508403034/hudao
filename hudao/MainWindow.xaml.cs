@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Configuration;
 using System.Windows;
 using hudao.Core;
 using hudao.Views.Common.Menu;
@@ -17,14 +16,22 @@ namespace hudao
         public MainWindow()
         {
             InitializeComponent();
-            //var ss = ConfigurationManager.GetSection("hudao");
             Navigator.Current.GotoView(new CreateView());
         }
 
-        public Visibility MenuVisibility
+        public bool IsMenuOpen
         {
-            get { return this.MenuBar.Visibility; }
-            set { this.MenuBar.Visibility = value; }
+        get { return this.MenuBar.IsOpen; }
+        }
+
+        public void ShowMenu()
+        {
+            this.MenuBar.Show();
+        }
+
+        public void HideMenu()
+        {
+            this.MenuBar.Close();
         }
 
         public Visibility LoadingVisibility
