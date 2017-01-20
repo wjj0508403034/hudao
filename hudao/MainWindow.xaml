@@ -13,7 +13,7 @@
                 <Menu:MenuBar x:Name="MenuBar" Visibility="Collapsed" x:FieldModifier="private" MenuItemChanged="OnMenuItemChanged"></Menu:MenuBar>
 
                 <ScrollViewer Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Auto">
-                    <Border Margin="{Binding Visibility,ElementName=MenuBar,Converter={StaticResource MainViewMarginConverter}}" Background="{DynamicResource BackgroundBrush}">
+                    <Border Background="{DynamicResource BackgroundBrush}">
                         <ContentControl  x:Name="ViewContainer" Width="{Binding ElementName=MainWindowContainer,Path=Width}" 
                                     x:FieldModifier="private">
                         </ContentControl>

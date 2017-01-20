@@ -10,7 +10,7 @@ namespace hudao.Views.MainView.Converters
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var visibility = (Visibility)value;
-            return visibility == Visibility.Visible ? new Thickness(0,5,5,5) : new Thickness(0);
+            return visibility == Visibility.Visible ? new Thickness(0) : new Thickness(0);
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
