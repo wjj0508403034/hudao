@@ -9,4 +9,6 @@ hudao/hudao.csproj.user
 packages/*
 Controllers/bin/*
 Controllers/obj/*
+Google.Material/bin/*
+Google.Material/obj/*
 hudao.sln.DotSettings.user

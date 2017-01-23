@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Brush x:Key="Brushes.Red">#f44336</Brush>
+    <Brush x:Key="Brushes.Pink">#e91e63</Brush>
+    <Brush x:Key="Brushes.Purple">#9c27b0</Brush>
+    <Brush x:Key="Brushes.DeepPurple">#673ab7</Brush>
+    <Brush x:Key="Brushes.Indigo">#3f51b5</Brush>
+    <Brush x:Key="Brushes.Blue">#2196f3</Brush>
+    <Brush x:Key="Brushes.LightBlue">#03a9f4</Brush>
+    <Brush x:Key="Brushes.Cyan">#00bcd4</Brush>
+    <Brush x:Key="Brushes.Teal">#009688</Brush>
+    <Brush x:Key="Brushes.Green">#4caf50</Brush>
+    <Brush x:Key="Brushes.LightGreen">#8bc34a</Brush>
+    <Brush x:Key="Brushes.Lime">#cddc39</Brush>
+    <Brush x:Key="Brushes.Yellow">#ffeb3b</Brush>
+    <Brush x:Key="Brushes.Amber">#ffc107</Brush>
+    <Brush x:Key="Brushes.Orange">#ff9800</Brush>
+    <Brush x:Key="Brushes.DeepOrange">#ff5722</Brush>
+    <Brush x:Key="Brushes.Brown">#795548</Brush>
+    <Brush x:Key="Brushes.Grey">#9e9e9e</Brush>
+    <Brush x:Key="Brushes.BlueGrey">#607d8b</Brush>
+</ResourceDictionary>
